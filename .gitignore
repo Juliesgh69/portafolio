@@ -22,6 +22,19 @@ desktop.ini
 
 screenshot.js
 verify.js
+verify2.js
 package.json
 package-lock.json
 node_modules/
+
+# Originales de Canva / recursos sueltos en raíz (copiados a assets/)
+/1.png
+/2.png
+/1 (2).png
+/2 (2).png
+/1 (3).png
+/2 (3).png
+/Logo Studio Mettro.png
+/Estilos de vida saludables en niños y adolescentes.png
+/¿Qué es una infografía.gif
+/pp.jpeg
