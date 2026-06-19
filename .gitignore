@@ -27,6 +27,9 @@ package.json
 package-lock.json
 node_modules/
 
+# Configuración interna de Claude Code
+.claude/
+
 # Originales de Canva / recursos sueltos en raíz (copiados a assets/)
 /1.png
 /2.png
