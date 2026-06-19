@@ -266,6 +266,12 @@ section { position: relative; z-index: 2; }
 .card--wide { grid-column: span 12; }
 .card--wide .card__media { aspect-ratio: 21 / 9; }
 
+/* real project images inside cards */
+.card__media img {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+}
+
 /* striped image placeholder */
 .ph {
   position: absolute; inset: 0;

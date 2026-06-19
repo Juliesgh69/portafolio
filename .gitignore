@@ -17,3 +17,11 @@ desktop.ini
 .vscode/
 *.suo
 *.user
+
+*.env.local
+
+screenshot.js
+verify.js
+package.json
+package-lock.json
+node_modules/

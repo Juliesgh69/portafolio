@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Read(//c/xampp/htdocs/bervi/**)",
-      "PowerShell(winget install --id Git.Git --accept-source-agreements --accept-package-agreements --silent 2>&1)"
+      "PowerShell(winget install --id Git.Git --accept-source-agreements --accept-package-agreements --silent 2>&1)",
+      "PowerShell(winget install --id OpenJS.NodeJS --accept-source-agreements --accept-package-agreements --silent 2>&1)",
+      "PowerShell(Get-Process -Name \"php\" -ErrorAction SilentlyContinue)",
+      "PowerShell(Stop-Process -Force)",
+      "PowerShell(Start-Process \"C:\\\\Users\\\\julie\\\\Downloads\\\\portafolio_Julieta\\\\dise�o_portafolio\\\\Portfolio.html\")"
     ]
   }
 }

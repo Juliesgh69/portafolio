@@ -7,12 +7,14 @@
  *           anteriores estuvieron expuestas en el código fuente.
  */
 
-$envFile = __DIR__ . '/.env';
-if (!file_exists($envFile)) {
+$envLocal = __DIR__ . '/.env.local';
+$envFile  = __DIR__ . '/.env';
+$envPath  = file_exists($envLocal) ? $envLocal : $envFile;
+if (!file_exists($envPath)) {
     die('Error: falta el archivo .env con las credenciales de base de datos.');
 }
 
-$env = parse_ini_file($envFile);
+$env = parse_ini_file($envPath);
 
 $servername = $env['DB_HOST'];
 $username   = $env['DB_USER'];
