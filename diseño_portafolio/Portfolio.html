@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Julieta García — Multimedia & Communications Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <a href="#top" class="nav__brand"><span class="star">✦</span> Julieta García</a>
+  <div class="nav__links">
+    <a href="#work" class="navlink" data-en="work" data-es="trabajo">trabajo</a>
+    <a href="#about" class="navlink" data-en="about" data-es="sobre mí">sobre mí</a>
+    <a href="#skills" class="navlink" data-en="skills" data-es="skills">skills</a>
+    <a href="#contact" class="navlink" data-en="contact" data-es="contacto">contacto</a>
+    <div class="lang" role="group" aria-label="Language">
+      <button data-lang="es" aria-pressed="true">ES</button>
+      <button data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="blob" style="width:200px;height:200px;background:var(--hotpink);top:18%;right:8%;opacity:.5;animation:float 9s ease-in-out infinite;"></div>
+  <div class="blob" style="width:120px;height:120px;background:var(--sage);bottom:16%;left:6%;opacity:.6;animation:float 11s ease-in-out infinite reverse;"></div>
+  <div class="wrap">
+    <div class="hero__top load" style="animation-delay:.05s">
+      <span class="hero__avail"><span class="dot"></span><span data-en="open to internships &amp; junior roles" data-es="abierta a prácticas y primer empleo">abierta a prácticas y primer empleo</span></span>
+      <span data-en="Guadalajara, MX · 2026" data-es="Guadalajara, MX · 2026">Guadalajara, MX · 2026</span>
+    </div>
+    <h1 class="hero__name load" style="animation-delay:.16s">
+      <span class="l1">julieta</span>
+      <span class="l2">garcía</span>
+    </h1>
+    <div class="hero__sub load" style="animation-delay:.3s">
+      <div class="hero__role" data-en="Multimedia &amp; Communications Engineer" data-es="Ingeniera en Multimedia y Comunicaciones">Ingeniera en Multimedia y Comunicaciones</div>
+      <div>
+        <p class="hero__tagline" data-en="I design and build playful digital experiences — UX, web, photography &amp; video that actually ship." data-es="Diseño y desarrollo experiencias digitales con carácter — UX, web, fotografía y video que de verdad funcionan.">Diseño y desarrollo experiencias digitales con carácter — UX, web, fotografía y video que de verdad funcionan.</p>
+        <a href="#work" class="hero__cta"><span data-en="see my work" data-es="ver mi trabajo">ver mi trabajo</span> ✦</a>
+      </div>
+    </div>
+    <div class="hero__scroll"><span class="line"></span><span data-en="scroll" data-es="desliza">desliza</span></div>
+  </div>
+</header>
+
+<!-- ============ WORK ============ -->
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="shead reveal">
+      <span class="num">(01)</span>
+      <h2 data-en="selected work" data-es="trabajo selecto">trabajo selecto</h2>
+    </div>
+
+    <div class="filters reveal">
+      <button class="filter" data-filter="all" aria-pressed="true" data-en="all" data-es="todo">todo</button>
+      <button class="filter" data-filter="uxweb" aria-pressed="false" data-en="ux &amp; web" data-es="ux &amp; web">ux &amp; web</button>
+      <button class="filter" data-filter="photo" aria-pressed="false" data-en="photography" data-es="fotografía">fotografía</button>
+      <button class="filter" data-filter="video" aria-pressed="false" data-en="video" data-es="video">video</button>
+      <button class="filter" data-filter="design" aria-pressed="false" data-en="design" data-es="diseño">diseño</button>
+    </div>
+
+    <div class="grid">
+      <!-- 1 — wide hero project -->
+      <article class="card card--wide reveal" data-cat="uxweb">
+        <div class="card__media">
+          <span class="card__tag">UX / UI</span>
+          <div class="ph" style="--ph-bg:#f2b9c9"><span data-en="project cover — Aurora app" data-es="portada — app Aurora">portada — app Aurora</span></div>
+        </div>
+        <div class="card__cap">
+          <span class="name">Aurora</span>
+          <span class="meta" data-en="App redesign · 2025" data-es="Rediseño de app · 2025">Rediseño de app · 2025</span>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card reveal" data-cat="uxweb">
+        <div class="card__media">
+          <span class="card__tag" data-en="WEB" data-es="WEB">WEB</span>
+          <div class="ph" style="--ph-bg:#b3c78c"><span data-en="festival site" data-es="sitio del festival">sitio del festival</span></div>
+        </div>
+        <div class="card__cap">
+          <span class="name">Bloom Fest</span>
+          <span class="meta" data-en="Web dev · HTML/JS" data-es="Desarrollo web · HTML/JS">Desarrollo web · HTML/JS</span>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card reveal" data-cat="photo">
+        <div class="card__media">
+          <span class="card__tag">PHOTO</span>
+          <div class="ph" style="--ph-bg:#e8a0b6"><span data-en="portrait series" data-es="serie de retratos">serie de retratos</span></div>
+        </div>
+        <div class="card__cap">
+          <span class="name" data-en="Faces" data-es="Rostros">Rostros</span>
+          <span class="meta" data-en="Photography · editing" data-es="Fotografía · edición">Fotografía · edición</span>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card reveal" data-cat="video">
+        <div class="card__media">
+          <span class="card__tag">VIDEO</span>
+          <div class="ph" style="--ph-bg:#c98f6a"><span data-en="brand film still" data-es="cuadro del brand film">cuadro del brand film</span></div>
+        </div>
+        <div class="card__cap">
+          <span class="name">Marca Viva</span>
+          <span class="meta" data-en="Brand film · Premiere" data-es="Brand film · Premiere">Brand film · Premiere</span>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card reveal" data-cat="design">
+        <div class="card__media">
+          <span class="card__tag" data-en="BRAND" data-es="MARCA">MARCA</span>
+          <div class="ph" style="--ph-bg:#d9b3e0"><span data-en="event branding" data-es="branding de evento">branding de evento</span></div>
+        </div>
+        <div class="card__cap">
+          <span class="name">Café Lila</span>
+          <span class="meta" data-en="Identity · Canva" data-es="Identidad · Canva">Identidad · Canva</span>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card reveal" data-cat="uxweb">
+        <div class="card__media">
+          <span class="card__tag">UX / UI</span>
+          <div class="ph" style="--ph-bg:#9ec0d6"><span data-en="dashboard concept" data-es="concepto de dashboard">concepto de dashboard</span></div>
+        </div>
+        <div class="card__cap">
+          <span class="name">Pulse</span>
+          <span class="meta" data-en="Product design · Figma" data-es="Diseño de producto · Figma">Diseño de producto · Figma</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>ux design <span class="star">✦</span> web dev <span class="star">✦</span> photography <span class="star">✦</span> video editing <span class="star">✦</span> motion <span class="star">✦</span> branding <span class="star">✦</span></span>
+    <span>ux design <span class="star">✦</span> web dev <span class="star">✦</span> photography <span class="star">✦</span> video editing <span class="star">✦</span> motion <span class="star">✦</span> branding <span class="star">✦</span></span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about" data-dark>
+  <div class="wrap">
+    <div class="grid2">
+      <div class="about__photo reveal">
+        <div class="ph"><span data-en="your photo here" data-es="tu foto aquí">tu foto aquí</span></div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow" style="color:var(--sage)">(02) — <span data-en="about me" data-es="sobre mí">sobre mí</span></span>
+        <h3 data-en="hi, I'm Julieta ✦" data-es="hola, soy Julieta ✦">hola, soy Julieta ✦</h3>
+        <p data-en="I'm a Multimedia &amp; Communications Engineer who lives where <em>design meets code</em>. I move comfortably between Figma and a code editor, a camera and a timeline." data-es="Soy Ingeniera en Multimedia y Comunicaciones y vivo donde <em>el diseño se encuentra con el código</em>. Me muevo igual entre Figma y un editor de código, una cámara y una línea de tiempo.">Soy Ingeniera en Multimedia y Comunicaciones y vivo donde <em>el diseño se encuentra con el código</em>. Me muevo igual entre Figma y un editor de código, una cámara y una línea de tiempo.</p>
+        <p data-en="I love building things that feel playful but work seriously well — and I'm looking for a team where I can keep learning and shipping." data-es="Me encanta crear cosas con personalidad que funcionen en serio — y busco un equipo donde seguir aprendiendo y construyendo.">Me encanta crear cosas con personalidad que funcionen en serio — y busco un equipo donde seguir aprendiendo y construyendo.</p>
+        <div class="facts">
+          <span class="fact" data-en="☕ coffee-powered" data-es="☕ a base de café">☕ a base de café</span>
+          <span class="fact" data-en="📷 always shooting" data-es="📷 siempre con la cámara">📷 siempre con la cámara</span>
+          <span class="fact" data-en="🌎 EN / ES" data-es="🌎 EN / ES">🌎 EN / ES</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="skills" id="skills">
+  <div class="wrap">
+    <div class="shead reveal">
+      <span class="num">(03)</span>
+      <h2 data-en="skills &amp; tools" data-es="skills &amp; tools">skills &amp; tools</h2>
+    </div>
+    <div class="skills__groups">
+      <div class="skgroup reveal">
+        <h4 data-en="design" data-es="diseño">diseño</h4>
+        <ul>
+          <li>Figma</li><li>Canva</li><li>Photoshop</li><li>Illustrator</li><li>UX Research</li><li>Prototyping</li>
+        </ul>
+      </div>
+      <div class="skgroup reveal">
+        <h4 data-en="code" data-es="código">código</h4>
+        <ul>
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>React</li><li>Git</li>
+        </ul>
+      </div>
+      <div class="skgroup reveal">
+        <h4 data-en="photo &amp; video" data-es="foto &amp; video">foto &amp; video</h4>
+        <ul>
+          <li>Premiere</li><li>After Effects</li><li>Lightroom</li><li data-en="Photography" data-es="Fotografía">Fotografía</li><li data-en="Color" data-es="Color">Color</li><li>Motion</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CV ============ -->
+<section class="cv">
+  <div class="wrap">
+    <div class="cv__inner reveal">
+      <div>
+        <h3 data-en="want the full story?" data-es="¿quieres todo el detalle?">¿quieres todo el detalle?</h3>
+        <p data-en="My resume — experience, education &amp; the rest." data-es="Mi CV — experiencia, formación y lo demás.">Mi CV — experiencia, formación y lo demás.</p>
+      </div>
+      <a href="#" class="btn" download><span data-en="download CV" data-es="descargar CV">descargar CV</span> ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact" data-dark>
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--sage)">(04) — <span data-en="contact" data-es="contacto">contacto</span></span>
+    <h2 data-en="let's talk" data-es="hablemos">hablemos</h2>
+    <p class="lead" data-en="Got a role, a project, or just want to say hi? ✦" data-es="¿Tienes una vacante, un proyecto, o solo quieres saludar? ✦">¿Tienes una vacante, un proyecto, o solo quieres saludar? ✦</p>
+    <div class="grid2">
+      <form class="form" id="contactForm">
+        <div class="field">
+          <label data-en="name" data-es="nombre">nombre</label>
+          <input type="text" required data-ph-en="Your name" data-ph-es="Tu nombre" placeholder="Tu nombre">
+        </div>
+        <div class="field">
+          <label data-en="email" data-es="correo">correo</label>
+          <input type="email" required data-ph-en="you@email.com" data-ph-es="tu@correo.com" placeholder="tu@correo.com">
+        </div>
+        <div class="field">
+          <label data-en="message" data-es="mensaje">mensaje</label>
+          <textarea required data-ph-en="Tell me about it…" data-ph-es="Cuéntame…" placeholder="Cuéntame…"></textarea>
+        </div>
+        <button type="submit" class="btn"><span data-en="send" data-es="enviar">enviar</span> ✦</button>
+        <span class="form__ok" data-en="thanks! I'll reply soon ✦" data-es="¡gracias! te respondo pronto ✦">¡gracias! te respondo pronto ✦</span>
+      </form>
+      <div class="cinfo">
+        <div class="row">
+          <span class="k" data-en="email" data-es="correo">correo</span>
+          <a class="big" href="mailto:hola@julietagarcia.com">hola@julietagarcia.com</a>
+        </div>
+        <div class="row">
+          <span class="k">instagram</span>
+          <a class="big" href="#">@julieta.creates</a>
+        </div>
+        <div class="row">
+          <span class="k">linkedin</span>
+          <a class="big" href="#">in/julietagarcia</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <span>© Julieta García 2026</span>
+      <span data-en="made with care &amp; coffee ✦" data-es="hecho con cariño y café ✦">hecho con cariño y café ✦</span>
+      <span data-en="back to top ↑" data-es="volver arriba ↑"><a href="#top" data-en="back to top ↑" data-es="volver arriba ↑">volver arriba ↑</a></span>
+    </div>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

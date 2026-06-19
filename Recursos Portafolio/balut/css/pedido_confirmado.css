@@ -1,0 +1,225 @@
+/* =========================================
+   PEDIDO CONFIRMADO — BALUT DECO
+   ========================================= */
+
+body {
+    background: #f5f4f6;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor general */
+.confirmacion-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* ---------- Caja principal de éxito ---------- */
+.confirmacion-box {
+    text-align: center;
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    margin-bottom: 35px;
+}
+
+.icono-exito {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
+    background: #78C3C9;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.confirmacion-box h2 {
+    color: #C09BBC;
+    font-size: 1.9rem;
+    margin-bottom: 8px;
+}
+
+.confirmacion-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.numero-pedido strong {
+    font-size: 1.4rem;
+    color: #754d78;
+}
+
+.estado-pedido-badge {
+    display: inline-block;
+    background: #f5e9f7;
+    color: #754d78;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* ---------- Secciones generales ---------- */
+.seccion-pedido {
+    background: #fff;
+    padding: 25px 25px;
+    margin: 25px 0;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+}
+
+.seccion-pedido h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    color: #C09BBC;
+}
+
+.info-linea {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 1rem;
+}
+
+.info-linea strong {
+    color: #754d78;
+}
+
+/* ---------- Timeline ---------- */
+.timeline {
+    margin-top: 15px;
+}
+
+.timeline h4 {
+    margin-bottom: 10px;
+    color: #754d78;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    font-size: 1rem;
+}
+
+.timeline-item .icono {
+    width: 30px;
+    height: 30px;
+    background: #E4D1E9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #754d78;
+    font-size: 1rem;
+}
+
+.timeline-item.completado .icono {
+    background: #78C3C9;
+    color: white;
+}
+
+/* ---------- Pago OK ---------- */
+.pago-ok {
+    color: #4caf50;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* ---------- Tabla productos ---------- */
+.productos-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.productos-tabla th {
+    background: #fce7ae;
+    padding: 12px;
+    font-size: 0.95rem;
+}
+
+.productos-tabla td {
+    padding: 14px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.productos-tabla td strong {
+    color: #2b2b2b;
+}
+
+/* ---------- Totales ---------- */
+.totales {
+    margin-top: 20px;
+}
+
+.totales .linea {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+
+.totales .total span:last-child {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #754d78;
+}
+
+.envio-gratis {
+    color: #4caf50;
+    font-weight: 700;
+}
+
+/* ---------- Info extra ---------- */
+.info-extra ul {
+    padding-left: 20px;
+}
+
+.info-extra li {
+    padding: 6px 0;
+    color: #444;
+}
+
+/* ---------- Botones ---------- */
+.botones-accion {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.btn-secundario {
+    background: #78C3C9;
+    padding: 10px 20px;
+    border-radius: 14px;
+    margin: 10px;
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* ---------- Agradecimiento ---------- */
+.agradecimiento-box {
+    background: #fff;
+    padding: 20px 25px;
+    margin-top: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.agradecimiento-box h3 {
+    margin-top: 0;
+    color: #C09BBC;
+}
+
+.agradecimiento-mini {
+    margin-top: 8px;
+    color: #754d78;
+}

@@ -1,0 +1,151 @@
+/* Fuente Roboto desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #003366;
+}
+
+/* LOGO */
+header {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    height: 200px;
+    margin-left: 650px;
+}
+
+/* CONTENEDOR GENERAL */
+.container {
+    max-width: 95%;              
+    margin: 80px auto;           
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 40px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 1;
+}
+
+
+/* FORMULARIO MODERNO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.95);
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #00AEEF66;
+}
+
+/* ETIQUETAS */
+label {
+    font-weight: 500;
+    color: #003366;
+}
+
+/* BOTONES ESTÉTICOS */
+button {
+    background-color: #00AEEF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #007BAA;
+}
+
+/* TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #00AEEF;
+    color: white;
+}
+
+/* ENLACES */
+a {
+    color: #003366;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* TÍTULO CON BUEN TAMAÑO */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #003366;
+}
+/* CONTENEDOR DE BOTONES */
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;        /* Espacio entre los botones */
+    margin-top: 30px; /* Separación del formulario */
+}
+/* TABLA: mejora legibilidad y hover */
+th, td {
+    border: 1px solid #ccc;
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+    table-layout: auto;
+}
+
+tr:hover {
+    background-color: #f0faff; /* azulito suave al pasar el mouse */
+}

@@ -1,0 +1,279 @@
+/* ==========================
+   CATÁLOGO
+   ========================== */
+
+/* Layout general del catálogo */
+.catalogo-container {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    padding: 20px 16px 60px;
+}
+
+/* --------------------------
+   HEADER (ajuste suave)
+-------------------------- */
+
+header {
+    border-radius: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    margin-top: 12px;
+}
+
+/* --------------------------
+   BLOQUE: Búsqueda y filtros
+---------------------------*/
+
+.search-filters {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 24px 28px 20px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+    border: 1px solid #eadff2;
+    margin-bottom: 24px;
+}
+
+.search-filters h2 {
+    margin: 0 0 12px;
+    font-size: 2rem;
+    color: #C09BBC;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    margin-top: 4px;
+}
+
+.search-bar form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-bar input[type="search"] {
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 999px;
+    border: none;
+    outline: none;
+    background-color: #f8f5fa;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    font-size: 0.95rem;
+}
+
+.search-bar button[type="submit"] {
+    border-radius: 999px;
+    padding: 10px 22px;
+    font-size: 0.9rem;
+    border: none;
+    background-color: #C09BBC;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.search-bar button[type="submit"]:hover {
+    background-color: #9d7a9e;
+    transform: translateY(-1px);
+}
+
+/* Filtros tipo “píldora” */
+.filtros {
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.filtros strong {
+    margin-right: 6px;
+    color: #555;
+}
+
+.filtros a {
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background-color: #f7f0fb;
+    color: #754d78;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: all 0.15s ease;
+}
+
+.filtros a:hover {
+    border-color: #C09BBC;
+    background-color: #fce7ae;
+}
+
+.filtros a.active {
+    background-color: #C09BBC;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* Texto de resultados */
+.search-filters p {
+    margin-top: 14px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* --------------------------
+   GRID de productos
+---------------------------*/
+
+.productos-grid {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+/* Tarjeta de producto estilo “Rayo” pero en lilas */
+.producto-card {
+    background-color: #ffffff;
+    border-radius: 22px;
+    padding: 16px 16px 18px;
+    border: 1px solid #eadff2;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Imagen cuadradita con esquinas suaves */
+.producto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 10px;
+}
+
+/* Categoría y nombre */
+.producto-card .categoria {
+    margin: 0;
+    font-size: 0.85rem;
+    text-transform: capitalize;
+    color: #8a8590;
+}
+
+.producto-card h3 {
+    margin: 2px 0;
+    font-size: 1.05rem;
+    color: #2b2b2b;
+}
+
+/* Precio */
+.producto-card .precio {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #C09BBC;
+    margin: 4px 0 8px;
+}
+
+/* Enlace “Ver detalles” */
+.producto-card > a[href*="producto.php"] {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #754d78;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+
+.producto-card > a[href*="producto.php"]:hover {
+    text-decoration: underline;
+}
+
+/* Formulario del botón Añadir al carrito */
+.producto-card form {
+    margin-top: 4px;
+}
+
+/* Botón principal dentro de la tarjeta */
+.producto-card .btn-primario {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 999px;
+    border: none;
+    background-color: #C09BBC;
+    color: #fff;
+    font-size: 0.92rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.producto-card .btn-primario:hover {
+    background-color: #9d7a9e;
+    transform: translateY(-1px);
+}
+
+/* --------------------------
+   Estado: sin resultados
+---------------------------*/
+
+.no-resultados {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 32px 24px;
+    margin-top: 24px;
+    text-align: center;
+    border: 1px solid #eadff2;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.05);
+}
+
+.no-resultados h2 {
+    margin-top: 0;
+    color: #C09BBC;
+}
+
+.no-resultados a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+    background-color: #C09BBC;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* --------------------------
+   Responsive
+---------------------------*/
+
+@media (max-width: 768px) {
+    .catalogo-container {
+        padding: 16px 10px 80px;
+    }
+
+    .search-filters {
+        padding: 20px 18px 18px;
+    }
+
+    .search-bar form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar button[type="submit"] {
+        width: 100%;
+    }
+}

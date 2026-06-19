@@ -1,0 +1,282 @@
+/* ==========================
+   HOME / INDEX
+   ========================== */
+
+/* Contenedor general del home */
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header del home (solo si le ponemos class en el HTML) */
+.header-home {
+    background: linear-gradient(135deg, #c09bbc, #9d7a9e);
+    padding: 30px 20px 40px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+}
+
+.header-home h1 {
+    margin: 0;
+    font-size: 2.6em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Nav dentro del header del home */
+.header-home nav {
+    margin: 18px 0 10px;
+}
+
+.header-home nav a {
+    display: inline-block;
+    color: #fdf7ff;
+    text-decoration: none;
+    margin: 0 14px;
+    font-weight: 500;
+    font-size: 1.02em;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.header-home nav a:hover {
+    color: #fce7ae;
+    border-bottom-color: #fce7ae;
+}
+
+/* Barra de búsqueda del home */
+.home-search {
+    margin: 20px auto 0;
+    max-width: 900px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-search input[type="text"],
+.home-search input[type="search"] {
+    flex: 1;
+    padding: 14px 18px;
+    border-radius: 999px;
+    border: none;
+    outline: none;
+    font-size: 0.98rem;
+    background-color: #f8f5fa;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.home-search button {
+    border-radius: 999px;
+    padding: 12px 26px;
+    font-size: 0.95rem;
+    background-color: #9d7a9e;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.home-search button:hover {
+    background-color: #754d78;
+}
+
+/* Secciones del home como tarjetas */
+.home-section {
+    background-color: #ffffff;
+    padding: 30px 32px;
+    margin: 24px auto;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 18px;
+    border: 1px solid #eadff2;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.06);
+}
+
+.home-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.home-section p {
+    font-size: 0.98rem;
+}
+
+/* Hero principal */
+.home-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.home-hero .home-cta {
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+}
+
+/* Grid de categorías */
+.categorias-grid {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 16px;
+}
+
+.categoria-card {
+    background: #faf8fb;
+    border-radius: 14px;
+    padding: 16px 18px;
+    border: 1px solid #e5d6f0;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.categoria-card h3 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+    color: #9d7a9e;
+}
+
+.categoria-card p {
+    margin: 0 0 10px;
+    font-size: 0.95rem;
+}
+
+.categoria-card a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #754d78;
+    text-decoration: none;
+}
+
+.categoria-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border-color: #c09bbc;
+}
+
+/* Productos destacados en cards */
+.productos-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.producto-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 16px 16px 18px;
+    border: 1px solid #eadff2;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.producto-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.producto-card h3 {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.producto-card .categoria {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.producto-card .precio {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #c09bbc;
+}
+
+.producto-card .acciones {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.producto-card .acciones a,
+.producto-card .acciones button {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+/* Footer del home (si quieres diferente al resto) */
+.footer-home {
+    background-color: #c09bbc;
+    color: #fff;
+    text-align: center;
+    padding: 25px 15px 18px;
+    font-size: 0.92em;
+    margin-top: 50px;
+}
+
+.footer-home .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-home h4 {
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.footer-home ul {
+    list-style: none;
+    padding: 0;
+    margin: 6px 0 14px;
+}
+
+.footer-home li {
+    margin: 3px 0;
+}
+
+.footer-home a {
+    color: #fce7ae;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-home a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-home {
+        padding: 22px 16px 30px;
+    }
+
+    .header-home h1 {
+        font-size: 2rem;
+    }
+
+    .home-search {
+        flex-direction: column;
+    }
+
+    .home-section {
+        padding: 22px 20px;
+        width: 94%;
+    }
+
+    .producto-card img {
+        height: 190px;
+    }
+}

@@ -1,0 +1,143 @@
+/* ==========================
+   PERFIL DE USUARIO
+   ========================== */
+
+body {
+    background-color: var(--bg-main);
+}
+
+/* Tarjeta principal del perfil */
+.perfil-container {
+    max-width: 640px;
+    margin: 40px auto 60px;
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 30px 28px 26px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.perfil-container h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 1.7rem;
+    color: var(--accent);
+    text-align: center;
+}
+
+/* Foto de perfil */
+.perfil-foto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.foto-container {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    border: 3px solid var(--accent);
+    background-color: #f3eef7;
+}
+
+.foto-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foto-container .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.25s ease;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.foto-container:hover .overlay {
+    opacity: 1;
+}
+
+/* Info del usuario */
+.perfil-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.perfil-nombre {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 4px;
+}
+
+.perfil-email {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Botones de secciones */
+.perfil-opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0 16px;
+}
+
+.perfil-btn {
+    background-color: var(--accent-soft);
+    color: #4b3a4f;
+    padding: 11px 14px;
+    border-radius: 999px;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--border-soft);
+    transition: 0.2s ease;
+}
+
+.perfil-btn:hover {
+    background-color: var(--accent);
+    color: #fff;
+}
+
+/* Enlaces inferiores (reutilizamos estilo tipo login) */
+.login-enlace {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.login-enlace a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-enlace a:hover {
+    text-decoration: underline;
+}
+
+/* Línea separadora dentro de la tarjeta */
+.perfil-container hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 18px 0 8px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .perfil-container {
+        margin: 24px 12px 40px;
+        padding: 24px 18px 20px;
+    }
+}

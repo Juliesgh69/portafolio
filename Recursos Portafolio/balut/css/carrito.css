@@ -1,0 +1,171 @@
+/* ==========================
+   CARRITO
+   ========================== */
+
+.carrito-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.carrito-vacio {
+    text-align: center;
+    padding: 50px 20px;
+    color: #666;
+}
+
+.carrito-vacio a.btn-primario {
+    margin-top: 15px;
+}
+
+.carrito-items {
+    margin-top: 20px;
+}
+
+.carrito-item {
+    display: grid;
+    grid-template-columns: 100px 1fr 120px 140px 120px 60px;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #e0d6e8;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: #fff;
+}
+
+.carrito-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carrito-item h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.carrito-item .categoria {
+    color: #666;
+    font-size: 14px;
+}
+
+.carrito-item .precio {
+    font-size: 16px;
+    color: #C09BBC;
+    font-weight: 600;
+}
+
+.form-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-cantidad input[type="number"] {
+    width: 60px;
+    padding: 5px;
+}
+
+/* Botón eliminar pequeño */
+.btn-eliminar {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.btn-eliminar:hover {
+    background-color: #c82333;
+}
+
+/* Resumen del carrito */
+.carrito-resumen {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid #e0d6e8;
+    border-radius: 8px;
+}
+
+.carrito-resumen h3 {
+    margin-top: 0;
+}
+
+.resumen-linea {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0d6e8;
+}
+
+.resumen-linea.total {
+    font-size: 22px;
+    font-weight: bold;
+    color: #C09BBC;
+    border-bottom: none;
+    margin-top: 10px;
+}
+
+.envio-gratis {
+    color: #28a745;
+}
+
+.nota-envio {
+    color: #666;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Botones de acción del resumen */
+.botones-accion {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.botones-accion a,
+.botones-accion button {
+    padding: 12px 25px;
+    font-size: 15px;
+}
+
+/* ==========================
+   RESPONSIVE CARRITO
+   ========================== */
+@media (max-width: 768px) {
+    .carrito-item {
+        grid-template-columns: 80px 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .carrito-item img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .form-cantidad {
+        justify-content: flex-start;
+    }
+
+    .carrito-resumen {
+        margin-top: 25px;
+    }
+
+    .botones-accion {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .botones-accion a,
+    .botones-accion button {
+        width: 100%;
+        text-align: center;
+    }
+}
