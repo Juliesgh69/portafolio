@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/xampp/htdocs/bervi/**)",
+      "PowerShell(winget install --id Git.Git --accept-source-agreements --accept-package-agreements --silent 2>&1)"
+    ]
+  }
+}

@@ -1,8 +1,6 @@
 <?php
-$conexion = new mysqli("sql202.infinityfree.com", "if0_38951911", "globocambio666", "if0_38951911_globocambiomx");
-if ($conexion->connect_error) {
-    die("Error en la conexión: " . $conexion->connect_error);
-}
+require_once __DIR__ . '/config.php';
+// $conexion viene de config.php
 
 $mensaje = "";
 $mostrarFormulario = true;

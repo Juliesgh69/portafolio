@@ -1,25 +1,28 @@
 <?php
 /**
- * BALUT DECO - Conexión a la base de datos
- * Manejo seguro y estándar de conexión MySQLi
+ * BALUT DECO — Conexión a base de datos
+ * Lee credenciales desde .env (nunca las pongas aquí en texto plano).
+ *
+ * ⚠️ TODO: Rotar contraseña DB en panel InfinityFree — las credenciales
+ *           anteriores estuvieron expuestas en el código fuente.
  */
 
-$servername = "sql100.infinityfree.com";
-$username   = "if0_40335375";
-$password   = "balutFree69";
-$dbname     = "if0_40335375_balut_db";
-
-// Crear conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificar conexión
-if ($conn->connect_error) {
-    die("Error de conexión a la base de datos: " . $conn->connect_error);
+$envFile = __DIR__ . '/.env';
+if (!file_exists($envFile)) {
+    die('Error: falta el archivo .env con las credenciales de base de datos.');
 }
 
-// Forzar UTF-8 (muy importante para nombres con acentos y emojis)
-$conn->set_charset("utf8mb4");
+$env = parse_ini_file($envFile);
 
-// OPCIONAL: evitar warnings molestos
-// mysqli_report(MYSQLI_REPORT_OFF);
-?>
+$servername = $env['DB_HOST'];
+$username   = $env['DB_USER'];
+$password   = $env['DB_PASS'];
+$dbname     = $env['DB_NAME'];
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die('Error de conexión a la base de datos: ' . $conn->connect_error);
+}
+
+$conn->set_charset('utf8mb4');

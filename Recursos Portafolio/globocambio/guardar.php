@@ -3,11 +3,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$conexion = new mysqli("sql202.infinityfree.com", "if0_38951911", "globocambio666", "if0_38951911_globocambiomx");
-
-if ($conexion->connect_error) {
-    die("Error en la conexión: " . $conexion->connect_error);
-}
+require_once __DIR__ . '/config.php';
+// $conexion viene de config.php
 
 $nombre_cliente = $_POST["nombre_cliente"];
 $moneda_tienes = $_POST["moneda_tienes"];

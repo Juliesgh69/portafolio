@@ -1,0 +1,19 @@
+# ── Credenciales y configuración local ──────────────────────────
+.env
+*.env.local
+
+# ── Backup local (nunca va al repo) ─────────────────────────────
+/_backup/
+
+# ── Dumps con datos reales ───────────────────────────────────────
+*.sql
+
+# ── Sistema operativo ────────────────────────────────────────────
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ── Editores ─────────────────────────────────────────────────────
+.vscode/
+*.suo
+*.user
