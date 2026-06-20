@@ -43,7 +43,7 @@ header nav {
 .search-filters h2 {
     margin: 0 0 12px;
     font-size: 2rem;
-    color: #C09BBC;
+    color: var(--plum);
 }
 
 /* Barra de búsqueda */
@@ -73,7 +73,7 @@ header nav {
     padding: 10px 22px;
     font-size: 0.9rem;
     border: none;
-    background-color: #C09BBC;
+    background-color: var(--violet);
     color: #fff;
     font-weight: 600;
     cursor: pointer;
@@ -82,7 +82,7 @@ header nav {
 }
 
 .search-bar button[type="submit"]:hover {
-    background-color: #9d7a9e;
+    background-color: var(--plum);
     transform: translateY(-1px);
 }
 
@@ -106,19 +106,19 @@ header nav {
     padding: 6px 14px;
     border-radius: 999px;
     background-color: #f7f0fb;
-    color: #754d78;
+    color: var(--terra);
     border: 1px solid transparent;
     font-weight: 500;
     transition: all 0.15s ease;
 }
 
 .filtros a:hover {
-    border-color: #C09BBC;
+    border-color: var(--violet);
     background-color: #fce7ae;
 }
 
 .filtros a.active {
-    background-color: #C09BBC;
+    background-color: var(--violet);
     color: #fff;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
@@ -180,7 +180,7 @@ header nav {
 .producto-card .precio {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #C09BBC;
+    color: var(--violet);
     margin: 4px 0 8px;
 }
 
@@ -188,7 +188,7 @@ header nav {
 .producto-card > a[href*="producto.php"] {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #754d78;
+    color: var(--terra);
     text-decoration: none;
     margin-bottom: 4px;
 }
@@ -211,7 +211,7 @@ header nav {
     padding: 10px 14px;
     border-radius: 999px;
     border: none;
-    background-color: #C09BBC;
+    background-color: var(--violet);
     color: #fff;
     font-size: 0.92rem;
     font-weight: 600;
@@ -221,7 +221,7 @@ header nav {
 }
 
 .producto-card .btn-primario:hover {
-    background-color: #9d7a9e;
+    background-color: var(--plum);
     transform: translateY(-1px);
 }
 
@@ -241,7 +241,7 @@ header nav {
 
 .no-resultados h2 {
     margin-top: 0;
-    color: #C09BBC;
+    color: var(--violet);
 }
 
 .no-resultados a {
@@ -250,7 +250,7 @@ header nav {
     padding: 10px 20px;
     border-radius: 999px;
     text-decoration: none;
-    background-color: #C09BBC;
+    background-color: var(--violet);
     color: #fff;
     font-weight: 600;
 }

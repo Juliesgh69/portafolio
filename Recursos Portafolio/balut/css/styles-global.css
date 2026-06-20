@@ -1,186 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap');
+
 /* =========================================
    VARIABLES GLOBALES
    ========================================= */
 :root {
-    --accent: #C09BBC;
-    --accent-soft: #E4D1E9;
-    --border-soft: #eadff2;
-    --text-muted: #777;
-    --bg-light: #faf8fb;
-    --bg-main: #f5f4f6;
-    --radius: 12px;
+  /* Paleta principal */
+  --plum:       #5C2D6E;   /* ciruela profundo — header, headings */
+  --violet:     #8B4FA8;   /* violeta vivo — nav activo, botones secundarios */
+  --lavender:   #C9A8D6;   /* lavanda suave — bordes, hovers */
+  --lav-bg:     #F7F0FC;   /* fondo lavanda muy claro */
+
+  /* Acentos cálidos */
+  --terra:      #D4603F;   /* terracota — botón principal CTA */
+  --terra-dark: #B04D30;   /* terracota oscuro — hover */
+  --gold:       #C9870C;   /* oro — precios */
+  --gold-soft:  #FDE9B0;   /* dorado suave — th de tablas */
+
+  /* Neutros */
+  --text:       #1E0E28;
+  --text-2:     #6B5878;
+  --surface:    #FFFCFE;
+  --border:     #E5D0F0;
+  --radius:     14px;
+
+  /* Sombras */
+  --shadow-sm:  0 2px 8px rgba(92,45,110,.10);
+  --shadow-md:  0 8px 28px rgba(92,45,110,.13);
+  --shadow-lg:  0 20px 50px rgba(92,45,110,.16);
 }
 
 /* =========================================
    BASE GLOBAL
    ========================================= */
+*, *::before, *::after { box-sizing: border-box; }
+
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--bg-main);
-    color: #2b2b2b;
-    margin: 0;
-    line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--lav-bg);
+  color: var(--text);
+  margin: 0;
+  line-height: 1.65;
 }
 
 /* =========================================
    HEADER
    ========================================= */
 header {
-    background-color: var(--accent);
-    padding: 25px;
-    text-align: center;
-    color: white;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  background: linear-gradient(135deg, var(--plum) 0%, #7B3595 55%, var(--violet) 100%);
+  padding: 22px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(92,45,110,.35);
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.2em;
-    font-weight: 600;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: .02em;
 }
 
 header a {
-    color: white;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* =========================================
    NAVEGACIÓN GLOBAL
    ========================================= */
 nav {
-    text-align: center;
-    margin: 20px 0;
+  display: flex;
+  gap: 4px;
 }
 
 nav a {
-    color: #9d7a9e;
-    text-decoration: none;
-    margin: 0 20px;
-    font-weight: 600;
-    font-size: 1.1em;
+  color: rgba(255,255,255,.82);
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 999px;
+  transition: background .2s, color .2s;
 }
 
 nav a:hover {
-    color: #754d78;
+  background: rgba(255,255,255,.18);
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a.active {
+  background: rgba(255,255,255,.22);
+  color: #fff;
+  font-weight: 600;
 }
 
 /* =========================================
    SECCIONES BASE
    ========================================= */
 section {
-    background-color: white;
-    padding: 25px;
-    margin: 20px auto;
-    width: 85%;
-    border: 1px solid #ddd;
-    border-radius: var(--radius);
-    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  background-color: var(--surface);
+  padding: 28px 32px;
+  margin: 22px auto;
+  width: 88%;
+  max-width: 1200px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
 }
 
 h2 {
-    color: #9d7a9e;
-    font-size: 1.8em;
-    margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+  color: var(--plum);
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 /* =========================================
    TABLAS
    ========================================= */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 
 table, th, td {
-    border: 1px solid var(--border-soft);
+  border: 1px solid var(--border);
 }
 
 th {
-    background-color: #fce7ae;
-    font-weight: 600;
+  background: linear-gradient(90deg, var(--gold-soft), #FFF3C8);
+  color: var(--plum);
+  font-weight: 700;
+  font-size: .82rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  padding: 14px 16px;
 }
 
 td {
-    background-color: #fff;
-    padding: 12px;
+  background-color: var(--surface);
+  padding: 13px 16px;
+  color: var(--text);
 }
+
+tbody tr:hover td { background: var(--lav-bg); }
 
 /* =========================================
    IMÁGENES
    ========================================= */
 img {
-    max-width: 100%;
-    border-radius: 12px;
+  max-width: 100%;
+  border-radius: var(--radius);
 }
 
 /* =========================================
    FORMULARIOS (GENÉRICO)
    ========================================= */
 form label {
-    font-weight: 600;
-    color: #754d78;
-    margin-bottom: 5px;
-    display: block;
+  font-weight: 600;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--text-2);
+  margin-bottom: 6px;
+  display: block;
 }
 
 form input,
 form select,
 form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 12px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    background-color: var(--bg-light);
-    color: #333;
+  width: 100%;
+  padding: 13px 16px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  border: 1.5px solid var(--border);
+  background-color: var(--surface);
+  color: var(--text);
+  font-family: 'Poppins', sans-serif;
+  font-size: .95rem;
+  transition: border-color .2s, box-shadow .2s;
 }
 
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border-color: var(--violet);
+  box-shadow: 0 0 0 3px rgba(139,79,168,.15);
+}
+
+/* =========================================
+   BOTONES
+   ========================================= */
 button,
 .btn {
-    background-color: #78C3C9;
-    color: #fff;
-    padding: 12px 30px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: linear-gradient(135deg, var(--terra), var(--terra-dark));
+  color: #fff;
+  padding: 13px 28px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: .95rem;
+  letter-spacing: .02em;
+  box-shadow: 0 6px 18px rgba(212,96,63,.35);
+  transition: transform .15s, box-shadow .15s, filter .15s;
+  text-decoration: none;
 }
 
 button:hover,
 .btn:hover {
-    background-color: #5aa8ae;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(212,96,63,.45);
+  filter: brightness(1.06);
+  color: #fff;
+  text-decoration: none;
+}
+
+button:active,
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(212,96,63,.28);
+}
+
+/* Botón secundario (outline) */
+.btn-secundario,
+.btn-outline {
+  background: transparent;
+  color: var(--violet);
+  border: 2px solid var(--lavender);
+  box-shadow: none;
+}
+
+.btn-secundario:hover,
+.btn-outline:hover {
+  background: var(--lav-bg);
+  box-shadow: none;
+  color: var(--plum);
 }
 
 /* =========================================
    FOOTER
    ========================================= */
 footer {
-    background-color: var(--accent);
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-    font-size: 0.9em;
+  background: linear-gradient(135deg, var(--plum) 0%, #7B3595 100%);
+  color: #fff;
+  text-align: center;
+  padding: 22px 20px;
+  margin-top: 48px;
+  font-size: .88em;
 }
+
+footer a { color: var(--gold-soft); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
 
 /* =========================================
    MENSAJES
    ========================================= */
 .mensaje {
-    padding: 10px 15px;
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 6px;
-    font-size: 0.95em;
+  padding: 14px 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 12px;
+  font-size: .92rem;
+  font-weight: 500;
 }
 
 .mensaje.success {
-    background-color: #d4edda;
-    color: #155724;
+  background: #D1FAE5;
+  color: #065F46;
+  border: 1px solid #6EE7B7;
 }
 
 .mensaje.error {
-    background-color: #f8d7da;
-    color: #721c24;
+  background: #FEE2E2;
+  color: #991B1B;
+  border: 1px solid #FCA5A5;
 }
